@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Weather App</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <head>
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="city" id="label" style="color:MediumSeaGreen;">
+                            <p data-text="Weather App">Weather App</p>
+                        </label>
+                    </div>
+            </form>        
+    </head>
+    
+    <main>
+            <section class="location">
+              <div class="city"></div>
+              <div class="date"></div>
+            </section>
+            <div class="current">
+              <div class="temp"><span>°c</span></div>
+              <div class="weather"></div>
+              <div class="hi-low"></div>
+            </div>
+
+        <form class="form-inline my-2 my-lg-0" onsubmit="return false">
+                    <input class="form-control mr-sm-2" type="text" id="city_name" placeholder="Search city">
+                    <button class="btn btn-outline-success my-2 my-sm-0" onclick="setQuery()" type="submit">Search</button>
+                
+        </form>
+      </div>
+
+    </main>
+          
+      
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
